@@ -1,0 +1,58 @@
+body {
+  background: linear-gradient(135deg, #007BFF, #00c6ff);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+.marquee {
+  animation: jalan 8s linear infinite;
+  white-space: nowrap;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+@keyframes jalan {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+
+.tagline {
+  margin-top: 10px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.menu-item {
+  background: #bbdefb;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.price {
+  display: block;
+  margin-top: 5px;
+  background: white;
+  border-radius: 5px;
+}
+
+footer {
+  background: #007BFF;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
